@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  min-height:1000px;
+}
+.p{
+  font-weight: 300;
+  text-align: center;
+  color:#111;
+}
+.banner {
+  position:relative;
+  max-width:100%;
+  min-height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(szabo-viktor-4LDoRe_Lne8-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  transition:0.5s;
+}
+.banner .content{
+  max-width:900px;
+  text-align: center;
+}
+.content h2{
+  color:darkorange;
+  font-size: 50px;
+  margin:10px;
+}
+.content p.pragraph{
+  color:white;
+  text-align: justify;
+  margin:5px;
+  font-size:18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.btn{
+  margin:5px;
+  text-decoration: none;
+  border: 1px solid white;
+  padding:5px 30px;
+  color:white;
+  background: #111;
+  font-size: 25px;
+  display: inline-block;
+  transition: 0.5s;
+}
+a.btn:hover{
+  background: darkorange;
+  letter-spacing: 6px;
+}
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:30px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+}
+.containers{
+  width: 1380px;
+  margin:auto;
+  padding-left:30px;
+  padding-right: 30px;
+}
+.logo a.logopart{
+  text-decoration: none;
+  font-size:50px;
+  color:white;
+  font-weight:bold;
+  float:left;
+}
+.logo a.logopart span{
+  color:#ff0157;
+}
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.nav{
+  flex:1;
+  text-align: right;
+  float:right;
+}
+.navigation ul{
+  display: inline-block;
+}
+.navigation li{
+  display: inline-block;
+  padding-right:30px;
+}
+header .navigation a{
+  text-decoration: none;
+  color:white;
+  display: inline-block;
+  margin-top:15px;
+  float:right;
+}
+header .navigation .navbar:hover{
+  background: gray;
+}
+header.sticky{
+  background: darkorange;
+  padding:10px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky .logo a,
+header.sticky a{
+  color:black;
+}
+header.sticky a.navbar:hover{
+  background: #ccc;
+}
+.menu-img{
+  margin-top:10px;
+  transition: 0.5s;
+}
+.menu-img img{
+  margin:5px;
+  cursor: pointer;
+}
+.menu-img img.main-menu{
+  display: none;
+}
+section{
+  padding:90px;
+  text-align:center;
+}
+#about{
+  max-width: 1380px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin:auto;
+}
+.row{
+  display:flex;
+  flex-wrap: wrap;
+  text-align:center;
+  justify-content:space-around;
+}
+.row .col50{
+  flex-basis:50%;
+  max-width: 500px;
+  margin:5px;
+}
+.titletext{
+  color:#111;
+  font-size:2em;
+  font-weight: 300;
+}
+.titletext span{
+  color:#ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.row .col50 .imgbox img{
+  width:100%;
+  height: 100%;
+  cursor:pointer;
+  transition: 0.5s;
+}
+.title{
+  width:100%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.menu .content{
+  display: flex;
+  flex-direction:row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top:40px;
+  margin-bottom: 40px;
+  transition: 0.5s;
+}
+.menu .content .box{
+  width:330px;
+  margin:5px;
+  padding:5px;
+  filter:grayscale(100%);
+  transition: 0.5s;
+  cursor:pointer;
+}
+.menu .content .box:hover{
+  filter:grayscale(0%);
+}
+.menu .content .box:hover{
+
+  box-shadow:0 5px 35px rgba(0,0,0,0.8);
+}
+.menu .content .box .imgbox{
+  position: relative;
+  width:100%;
+  height: 200px;
+}
+.menu .content .box .imgbox img{
+  width:100%;
+  height: 100%;
+  top:0;
+  left:0;
+  object-fit: cover;
+  position: absolute;
+}
+.expert .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top:40px;
+  transition: .5s;
+}
+.expert .content .box{
+  width:250px;
+  margin:5px;
+  transition: .5s;
+  cursor:pointer;
+}
+.expert .content .imgbox{
+  width:100%;
+  height:300px;
+  position:relative;
+  transition: 0.5s;
+}
+.expert .content .imgbox img{
+  width:100%;
+  height: 100%;
+  top:0;
+  left:0;
+  object-fit: cover;
+  position: absolute;
+  transition: 0.5s;
+}
+.expert .content .box:hover{
+  box-shadow:0 5px 35px rgba(0,0,0,0.8);
+
+}
+.testimonials{
+  margin:auto;
+  max-width:1380px;
+  background: url(pexels-tejas-prajapati-586744.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.testimonials .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top:40px;
+}
+.testimonials .content .box{
+  width:330px;
+  margin:10px;
+  padding:15px;
+  background: #fff;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.testimonials .content .box .imgbox{
+  position:relative;
+  width:80px;
+  height: 80px;
+  margin-bottom:20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonials .content .box .imgbox img{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonials .content p{
+  text-align: center;
+}
+.testimonials .content h3{
+  margin-top:20px;
+  text-align: center;
+  color:red;
+  font-size:25px;
+}
+.testimonials .content .box:hover{
+  box-shadow: 10px 5px 35px rgba(0,0,0,08);
+}
+.testimonials .white h1,
+.testimonials .white p{
+  color:white;
+}
+.contact{
+  background: url(zz.jpg);
+  background-size: cover;
+}
+.contactform{
+  padding: 75px 50px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+  max-width:500px;
+  background: white;
+  margin-top:50px;
+}
+.contactform h3{
+  color:#111;
+  font-size:1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.contactform .inputbox{
+  position: relative;
+  width:100%;
+  margin-bottom: 20px;
+}
+.contactform .inputbox input{
+  width:100%;
+  border:1px solid #555;
+  padding:10px;
+  color:#111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize:none;
+}
+.contactform .inputbox textarea{
+  width:100%;
+  border:1px solid #555;
+  padding:10px;
+  color:#111;
+}
+.contactform .inputbox input[type="submit"]{
+  font-size: 1em;
+  color:#fff;
+  background: #ff0157;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition:0.5s;
+  max-width: 100px;
+  font-weight: 500;
+  border:none;
+  cursor:pointer;
+}
+.copyright{
+  background:#B4BDE9;
+  text-align: center;
+  font-size:15px;
+}
+@media screen and (max-width:991px){
+  .nav ul{
+    float:right;
+    position: absolute;
+    top:96px;
+    width:45%;
+    height: 380px;
+    left: 0;
+    background: orange;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .nav ul li{
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+  }
+  .nav ul li a{
+    color:white;
+  }
+  .nav ul li a:hover{
+    color:black;
+  }
+  .menu-img img{
+    margin-top:15px;
+  }
+  .menu-img img.main-menu{
+    display: inline-block;
+  }
+  .row .col50{
+    flex-basis:100%;
+    max-width: 500px;
+  }
+  .row .col50 .imgbox img{
+    margin-top:25px;
+  }
+}
+@media screen and (max-width:600px){
+  .containers{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nav ul{
+    top:65px;
+  }
+  .content h2{
+    font-size:40px;
+    line-height: 50px;
+  }
+  .logo a.logopart{
+    margin:0;
+    padding:0;
+    font-size: 30px;
+  }
+  .menu-img img{
+    margin-top:0px;
+  }
+  .box .text h3{
+    font-size: 20px;
+  }
+  a.btn{
+    font-size: 18px;
+    margin-top:20px;
+  }
+  .banner .content{
+    max-width:700px;
+  }
+  .banner .content h2,
+  .banner .content p{
+    width:350px;
+  }
+  .testimonials .content .box{
+    width:350px;
+  }
+  .contactform{
+    padding: 10px 10px;
+    width:350px;
+  }
+}
